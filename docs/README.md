@@ -1,2 +1,2 @@
 # HI THERE!
-![Image of Yaktocat](outputs/home-out.png)
+![Image of Yaktocat](./images/home-out.png)
