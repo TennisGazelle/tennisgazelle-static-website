@@ -1,9 +1,9 @@
 {
     "raw_json_code": {
         "name": "Daniel Lopez",
-        "website": "tennisgazelle.com",
-        "github": "tennisgazelle",
-        "twitter": "@tennis_gazelle" 
+        "music": {
+            "somestuff": "thing"
+        }
     },
     "backgroundColor": "#4A4A4A"
 }

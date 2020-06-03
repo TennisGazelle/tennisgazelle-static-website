@@ -40,27 +40,27 @@ def fetchImageFor(req, output_filename):
 
     img_data = post_reply.content
 
-    with open(output_filename, 'wb') as handler:
+    with open(output_filename, 'wb+') as handler:
         handler.write(img_data)
 
-def getPayload(input_filename):
-    with open('inputs/sample-one.json') as in_f:
+def getPayload(input_dir, input_filename):
+    with open(os.path.join(input_dir, input_filename)) as in_f:
         payload=json.load(in_f)
     payload['code'] = json.dumps(payload['raw_json_code'], indent=3)
     return payload
 
 
 if __name__ == "__main__":
-    # input_dir="inputs/"
+     input_dir="inputs/"
 
-    # for subdir, dirs, files in os.walk(input_dir):
-    #     for input_file in files:
-    #         output_file = input_file.replace(".json", "-out.png")
+     for subdir, dirs, files in os.walk(input_dir):
+         for input_file in files:
+             output_file = input_file.replace(".json", ".png")
 
-    #         print("loading {}...".format(input_file))
-    #         home_page_src = getPayload(input_file)
+             print("loading {}...".format(input_file))
+             input_file_src = getPayload(input_dir, input_file)
             
-    #         print(json.dumps(home_page_src, indent=3))
-    #         fetchImageFor(home_page_src, os.path.join("outputs/", output_file))
+             print(json.dumps(input_file_src, indent=3))
+             fetchImageFor(input_file_src, os.path.join("docs/images/", output_file))
 
-    test("outputs/sample-one-out.png")
+    # test("outputs/sample-one-out.png")
