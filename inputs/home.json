@@ -1,6 +1,23 @@
 {
     "raw_json_code": {
         "name": "Daniel Lopez",
+        "occupations": [
+            {
+                "Dev Ops Engineer": {
+                    "employer": "Intuit Turbo Tax",
+                    "experienceInYears": "2"
+                }
+            }
+        ],
+        "education": [
+            {
+                "school": "University of Nevada, Reno",
+                "degrees": [
+                    "Bachelor's In Computer Science - 2017",
+                    "Master's in Computer Science - 2018"
+                ]
+            }
+        ],
         "website": "tennisgazelle.com",
         "github": "https://github.com/TennisGazelle",
         "twitter": "@Tennis_Gazelle",

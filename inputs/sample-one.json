@@ -3,7 +3,8 @@
         "name": "Daniel Lopez",
         "website": "tennisgazelle.com",
         "github": "tennisgazelle",
-        "twitter": "@tennis_gazelle" 
+        "twitter": "@tennis_gazelle" ,
+        "musescore": "payload"
     },
     "backgroundColor": "#4A4A4A"
 }
