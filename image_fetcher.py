@@ -9,7 +9,7 @@ from PIL import Image
 # import cv2
 
 def createAreaWithinMap(url, desc, x1, y1, x2, y2):
-    return f'<area shape="rect" coords="{x1},{y1},{x2},{y2}" href="{url}" alt="{desc}"/>'
+    return f'<area shape="rect" coords="{x1},{y1},{x2},{y2}" href="{url}" onclick=\"javascript:window.open("{url}"); return false;\" alt="{desc}"/>'
 
 def createHTMLFromMap(links, imgsrc):
     image_html = f'<img src="{imgsrc.replace("docs/", "")}" alt="alttext" usemap="#mapname">'
@@ -23,7 +23,7 @@ def createHTMLFromMap(links, imgsrc):
     </map>""".format("\n".join(area_htmls))
 
     # return image_html + map_html
-    return image_html + map_html
+    return  map_html + image_html
 
 def produce_templated_html(img, input_filename, output_filename):
     print(f"parsing {img} and detailing it in {output_filename} (with base template {input_filename})...")
