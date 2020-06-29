@@ -16,7 +16,7 @@ def createHTMLFromMap(links, imgsrc):
 
     area_htmls = [createAreaWithinMap(area["url"], area["desc"], area["x1"], area["y1"], area["x2"], area["y2"]) for area in links]
     
-    # print('area htmls', area_htmls)
+    print('area htmls', area_htmls)
 
     map_html = """<map name="mapname">
     {}
@@ -60,6 +60,19 @@ def produce_templated_html(img, input_filename, output_filename):
                 url  = "https://musescore.com/user/4187496",
                 desc =  "musescore profile",
             ))
+        elif 'resume' in d['text'][i]:
+            links.append(dict(
+                prep_link,
+                url  = "https://tennisgazelle.com/resume.pdf",
+                desc =  "resume as a pdf",
+            ))
+        elif 'hitrecord' in d['text'][i]:
+            links.append(dict(
+                prep_link,
+                url  = "https://hitrecord.org/users/tennisgazelle",
+                desc =  "hit record profile",
+            ))
+
 
     with open (input_filename, 'r') as input_file:
         with open(output_filename, 'w+') as output_file:
