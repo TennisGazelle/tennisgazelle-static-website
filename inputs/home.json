@@ -1,11 +1,17 @@
 {
     "raw_json_code": {
         "name": "Daniel Lopez",
+        "about": {
+            "website": "tennisgazelle.com",
+            "github": "https://github.com/TennisGazelle",
+            "twitter": "@Tennis_Gazelle",
+            "musescore": "https://musescore.com/user/4187496"
+        },
         "occupations": [
             {
                 "Dev Ops Engineer": {
                     "employer": "Intuit Turbo Tax",
-                    "experienceInYears": "2"
+                    "experience": "2 years"
                 }
             }
         ],
@@ -17,11 +23,7 @@
                     "Master's in Computer Science - 2018"
                 ]
             }
-        ],
-        "website": "tennisgazelle.com",
-        "github": "https://github.com/TennisGazelle",
-        "twitter": "@Tennis_Gazelle",
-        "musescore": "https://musescore.com/user/4187496"
+        ]
     },
     "backgroundColor": "#4A4A4A"
 }

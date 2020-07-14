@@ -30,7 +30,7 @@ def produce_templated_html(img, input_filename, output_filename):
     image=Image.open(img) 
 
     d=pytesseract.image_to_data(image, output_type=Output.DICT)
-
+    # print(d)
     n_boxes = len(d['level'])
     links = []
     for i in range(n_boxes):
@@ -73,6 +73,18 @@ def produce_templated_html(img, input_filename, output_filename):
                 desc =  "hit record profile",
             ))
 
+        elif 'University' in d['text'][i]:
+            links.append(dict(
+                prep_link,
+                url  = "https://www.unr.edu/",
+                desc =  "University of Nevada, Reno link",
+            ))
+        elif 'music' in d['text'][i]:
+            links.append(dict(
+                prep_link,
+                url  = "music.html",
+                desc =  "link to music page",
+            ))
 
     with open (input_filename, 'r') as input_file:
         with open(output_filename, 'w+') as output_file:
