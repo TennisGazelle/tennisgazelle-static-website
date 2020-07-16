@@ -1,23 +1,24 @@
 {
     "raw_json_code": {
-        "name": "Daniel Lopez",
-        "resume": "<- Click that word",
-        "links": [
-            "github",
-            "twitter",
-            "musescore",
-            "hitrecord"
-        ],
-        "jobs": {
-            "Intuit Turbo Tax" : {
-                "role": "DevOps Engineer",
-                "beenWithThemFor": "2 years"
-            }
-        },
-        "school": {
-            "University of Nevada, Reno": {
-                "M.S.": 2018,
-                "B.S.": 2017
+        "Daniel Lopez": {
+            "resume": "<- Click that word",
+            "links": [
+                "github",
+                "twitter",
+                "musescore",
+                "hitrecord"
+            ],
+            "jobs": {
+                "Intuit Turbo Tax" : {
+                    "role": "DevOps Engineer",
+                    "experience": "2 years"
+                }
+            },
+            "school": {
+                "University of Nevada, Reno": {
+                    "M.S.": 2018,
+                    "B.S.": 2017
+                }
             }
         }
     },

@@ -1,6 +1,12 @@
 #!/bin/bash
 
-python3 image_fetcher.py
+#python3 image_fetcher.py
+
+open docs/index.html
+
+read CONTINUE "Continue?"
+
+exit 0
 
 cp docs/home.html docs/index.html
 
