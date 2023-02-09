@@ -2,6 +2,12 @@
     "raw_json_code": {
         "Daniel Lopez": {
             "resume": "<- Click that word",
+            "website status": "Under Construction",
+            "remarks": [
+                "Please pardon the dust and the bad JSON picture",
+                "It's made this way to prevent automated scrapers",
+                "Click on these links for my profiles!"
+            ],
             "links": [
                 "github",
                 "twitter",
